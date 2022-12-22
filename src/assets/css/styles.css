@@ -1,0 +1,132 @@
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+.red-text {
+  color: red;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.category_btn,
+.product_btn {
+  color: white;
+  background-color: rgb(73, 0, 73);
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.closebtn {
+  color: red;
+  border: solid 2px red;
+}
+.textcolorsize {
+  color: black;
+  font-size: 20px;
+}
+.resize {
+  resize: none;
+}
+.savebtn {
+  color: green;
+  border: solid 2px green;
+}
+.checkbox_size {
+  font-size: 20px;
+}
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.sidebar .nav li .subNav-menu {
+  border-left: 1px solid #989898;
+  margin-left: 44px;
+}
+.sidebar .nav li .subNav-menu a {
+  display: block;
+  color: #fff;
+  margin: 5px 0px;
+  border-radius: 4px;
+  padding-left: 40px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+.sidebar .nav li .subNav-menu a:hover {
+  color: #f17700;
+  transition: all 0.3s ease;
+}
+.sidebar .nav li .subNav-menu a.active {
+  color: #f17700;
+}
+.sidebar .nav li .nav-link {
+  position: relative;
+}
+.sidebar .nav li .nav-link i.fa-angle-down,
+.sidebar .nav li .nav-link i.fa-angle-up {
+  position: absolute;
+  top: 19px;
+  right: 0;
+  font-size: 14px;
+}
+
+.loader {
+ 
+  border-top: 16px solid #3498db;
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  animation: spin 2s linear infinite;
+  position: relative;
+  justify-content: center;
+  margin: auto;
+  margin-top: 5%;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
