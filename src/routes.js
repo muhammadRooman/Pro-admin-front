@@ -30,6 +30,7 @@ import EditUser from "./views/User/EditUser";
 import EditCategory from "views/EditCategory";
 import NewNumber from "views/Numbers/NewNumber";
 import ListNumber from "views/Numbers/ListNumber";
+import Login from "views/Login";
 const allRoutes = [
   {
     path: "/dashboard",
@@ -202,6 +203,13 @@ const allRoutes = [
     name: "Profile",
     icon: "fa fa-cog",
     component: UserProfile,
+    layout: "/admin",
+  },
+  {
+    path: "/login",
+    name: "login",
+    icon: "fa fa-cog",
+    component: Login,
     layout: "/admin",
   },
 

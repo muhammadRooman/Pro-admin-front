@@ -76,7 +76,7 @@ function ViewUsers() {
           <Card className="card-plain table-plain-bg">
             <Card.Header className="d-flex justify-content-between">
               <Card.Title as="h4">Users</Card.Title>
-              <Link to="/admin/createuser">
+              <Link to="/admin/createUser">
                 <button className="btn category_btn">Add User</button>
               </Link>
             </Card.Header>

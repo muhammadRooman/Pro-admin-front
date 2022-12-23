@@ -28,7 +28,7 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import UserProfile from "./views/AdminProfile"
 import AdminLayout from "layouts/Admin.js";
 import Dashboard from "views/Dashboard";
-
+import Login from "views/Login";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
@@ -38,8 +38,17 @@ root.render(
       <Route path="/admin/*" element={<AdminLayout />} />
       {/* <Route path="/admin/*" render={(props) => <AdminLayout {...props} />} /> */}
       <Route path="/" element={<Navigate replace to="/admin/dashboard" />} />
-   
+      <Route path="/login" element={<Login />} />
       {/* <Redirect from="/" to="/admin/dashboard" /> */}
     </Routes>
   </BrowserRouter>
 );
+
+
+
+
+
+
+
+
+

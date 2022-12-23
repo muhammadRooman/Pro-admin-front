@@ -100,9 +100,9 @@ function EditUser() {
                 <Row>
                   <Col className="pr-1" md="6">
                     <Form.Group>
-                      <label>FirstName</label>
+                      <label>First Name</label>
                       <Form.Control
-                        placeholder="First Name"
+                        placeholder="Enter First Name"
                         name="firstname"
                         id="firstname"
                         value={formdata?.firstname}
@@ -118,14 +118,14 @@ function EditUser() {
                   </Col>
                   <Col className="pl-1" md="6">
                     <Form.Group>
-                      <label>LastName</label>
+                      <label>Last Name</label>
                       <Form.Control
                         name="lastname"
                         id="lastname"
                         value={formdata?.lastname}
                         error={formdata?.errors?.lastname}
                         onChange={handleChange}
-                        placeholder="Last Name"
+                        placeholder="Enter Last Name"
                         type="text"
                       ></Form.Control>
                       <label htmlFor="lastname"></label>

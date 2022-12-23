@@ -71,8 +71,8 @@ function CreateUser() {
                     <Form.Group>
                       <label>First Name</label>
                       <Form.Control
-                        placeholder="First Name"
-                        name="Enter your First Name"
+                        placeholder="Enter your First Name"
+                        name=""
                         id="firstname"
                         value={formdata.firstname}
                         error={formdata.errors.firstname}
