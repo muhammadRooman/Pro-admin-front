@@ -69,10 +69,10 @@ function CreateUser() {
                 <Row>
                   <Col className="pr-1" md="6">
                     <Form.Group>
-                      <label>FirstName</label>
+                      <label>First Name</label>
                       <Form.Control
                         placeholder="First Name"
-                        name="firstname"
+                        name="Enter your First Name"
                         id="firstname"
                         value={formdata.firstname}
                         error={formdata.errors.firstname}
@@ -87,14 +87,14 @@ function CreateUser() {
                   </Col>
                   <Col className="pl-1" md="6">
                     <Form.Group>
-                      <label>LastName</label>
+                      <label>Last Name</label>
                       <Form.Control
                         name="lastname"
                         id="lastname"
                         value={formdata.lastname}
                         error={formdata.errors.lastname}
                         onChange={handleChange}
-                        placeholder="Last Name"
+                        placeholder="Enter your Last Name"
                         type="text"
                       ></Form.Control>
                       <label htmlFor="lastname"></label>
@@ -112,9 +112,9 @@ function CreateUser() {
                         name="email"
                         id="email"
                         value={formdata.email}
-                        placeholder="Email Address"
+                        placeholder="Enter your Email Address"
                         error={formdata.errors.email}
-                        type="text"
+                        type="email"
                         onChange={handleChange}
                       ></Form.Control>
                       <label htmlFor="email"></label>
@@ -128,9 +128,9 @@ function CreateUser() {
                         name="phone"
                         id="phone"
                         value={formdata.phone}
-                        placeholder="Phone Number"
+                        placeholder="Enter your Phone Number"
                         error={formdata.errors.phone}
-                        type="text"
+                        type="number"
                         onChange={handleChange}
                       ></Form.Control>
                       <label htmlFor="phone"></label>

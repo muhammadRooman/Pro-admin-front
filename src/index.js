@@ -25,7 +25,7 @@ import "./assets/css/animate.min.css";
 import "./assets/scss/light-bootstrap-dashboard-react.scss?v=2.0.0";
 import "./assets/css/demo.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-
+import UserProfile from "./views/AdminProfile"
 import AdminLayout from "layouts/Admin.js";
 import Dashboard from "views/Dashboard";
 
@@ -38,6 +38,7 @@ root.render(
       <Route path="/admin/*" element={<AdminLayout />} />
       {/* <Route path="/admin/*" render={(props) => <AdminLayout {...props} />} /> */}
       <Route path="/" element={<Navigate replace to="/admin/dashboard" />} />
+   
       {/* <Redirect from="/" to="/admin/dashboard" /> */}
     </Routes>
   </BrowserRouter>

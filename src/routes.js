@@ -24,9 +24,9 @@ import CreateCategory from "views/CreateCategory";
 import ViewCategory from "views/ViewCategory";
 import ViewProducts from "views/ViewProducts";
 import CreateProducts from "./views/CreateProducts";
-import CreateUser from "./static/User/CreateUser";
-import ViewUsers from "./static/User/ViewUsers";
-import EditUser from "./static/User/EditUser";
+import CreateUser from "./views/User/CreateUser";
+import ViewUsers from "./views/User/ViewUsers";
+import EditUser from "./views/User/EditUser";
 import EditCategory from "views/EditCategory";
 import NewNumber from "views/Numbers/NewNumber";
 import ListNumber from "views/Numbers/ListNumber";
@@ -35,7 +35,7 @@ const allRoutes = [
     path: "/dashboard",
     name: "Dashboard",
     icon: "fas fa-tachometer-alt",
-    component: ViewCategory,
+    component: Dashboard,
     layout: "/admin",
   },
   {
@@ -52,18 +52,17 @@ const allRoutes = [
         name: "New Number",
         component: CreateUser,
         layout: "/admin",
-        icon: "nc-icon nc-atom",
+      
       },
       {
         path: "/ViewUsers",
         name: "List Number",
         component: ViewUsers,
         layout: "/admin",
-        icon: "nc-icon nc-atom",
+       
       },
       {
         path: "/edituser/:id",
-     
         icon: "nc-icon nc-bullet-list-67",
         component: EditUser,
         layout: "/admin",
@@ -84,14 +83,14 @@ const allRoutes = [
         name: "New Template",
         component: ViewCategory,
         layout: "/admin",
-        icon: "nc-icon nc-atom",
+     
       },
       {
         path: "/List_Template",
         name: "List Template",
         component: ViewCategory,
         layout: "/admin",
-        icon: "nc-icon nc-atom",
+        
       },
       
     ],
@@ -113,20 +112,20 @@ const allRoutes = [
         name: "New Campaign",
         component: ViewCategory,
         layout: "/admin",
-        icon: "nc-icon nc-atom",
+      
       },
       {
         path: "/List_Campaigns",
         name: "List Campaigns",
         component: ViewCategory,
         layout: "/admin",
-        icon: "nc-icon nc-atom",
+      
       },
       
     ],
   },
   {
-    icon: "fas fa-blog",
+    icon: "far fa-comments",
     name: "Questioner",
     iconClosed: <i class="fa fa-angle-up"></i>,
     iconOpened: <i class="fa fa-angle-down"></i>,
@@ -136,14 +135,14 @@ const allRoutes = [
         name: "New Questioner",
         component: ViewCategory,
         layout: "/admin",
-        icon: "nc-icon nc-atom",
+        
       },
       {
         path: "/List_Questioners",
         name: "List Questioners",
         component: ViewCategory,
         layout: "/admin",
-        icon: "nc-icon nc-atom",
+       
       },
     ],
   },
@@ -198,7 +197,18 @@ const allRoutes = [
     component: ViewCategory,
     layout: "/admin",
   },
+  {
+    path: "/profile",
+    name: "Profile",
+    icon: "fa fa-cog",
+    component: UserProfile,
+    layout: "/admin",
+  },
+
+ 
 ]
+
+
 
 // const dashboardRoutes = allRoutes .slice(0);
 export default allRoutes;

@@ -130,3 +130,8 @@ input:checked + .slider:before {
 }
 
 
+
+.account{
+  text-decoration: none;
+  color: #8d8a8a;
+}

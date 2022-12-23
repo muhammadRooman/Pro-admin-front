@@ -16,7 +16,7 @@
 
 */
 import React, { Component } from "react";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Navbar, Container, Nav, Dropdown, Button } from "react-bootstrap";
 
 import routes from "routes.js";
@@ -43,7 +43,7 @@ function Header() {
         return routes[i].name;
       }
     }
-    return "Brand";
+    return "Facebook Chatbot";
   };
   return (
     <Navbar bg="light" expand="lg">
@@ -73,12 +73,14 @@ function Header() {
           <Nav className="ml-auto" navbar>
             <Nav.Item>
               <Nav.Link
+              to="/"
                 className="m-0"
                 href="#pablo"
                 onClick={(e) => e.preventDefault()}
               >
-                <span className="no-icon">Account</span>
+             <Link className="account" to="/admin/profile">Account</Link> 
               </Nav.Link>
+            {/* <Link to="/admin/profile">Account</Link>  */}
             </Nav.Item>
             <Nav.Item>
               <Nav.Link
