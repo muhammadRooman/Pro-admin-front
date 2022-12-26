@@ -72,7 +72,7 @@ function CreateUser() {
                       <label>First Name</label>
                       <Form.Control
                         placeholder="Enter your First Name"
-                        name=""
+                        name="firstname"
                         id="firstname"
                         value={formdata.firstname}
                         error={formdata.errors.firstname}

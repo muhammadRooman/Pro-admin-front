@@ -23,7 +23,7 @@ const SubMenu = ({ prop, _key }) => {
          ? prop.iconOpened
          : null}
        </div>
-       : (prop.name !== "Profile")||(prop.name !== "Login") &&
+       : (prop.name !== "Login") &&
        <Link
        to={ prop.layout + prop.path}
        className="nav-link"

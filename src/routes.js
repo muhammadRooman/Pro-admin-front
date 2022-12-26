@@ -24,13 +24,14 @@ import CreateCategory from "views/CreateCategory";
 import ViewCategory from "views/ViewCategory";
 import ViewProducts from "views/ViewProducts";
 import CreateProducts from "./views/CreateProducts";
-import CreateUser from "./views/User/CreateUser";
-import ViewUsers from "./views/User/ViewUsers";
-import EditUser from "./views/User/EditUser";
+import NewNumber from "./views/Number/NewNumber";
+import ListNumber from "./views/Number/ListNumber";
+import EditUser from "./views/Number/EditUser";
 import EditCategory from "views/EditCategory";
-import NewNumber from "views/Numbers/NewNumber";
-import ListNumber from "views/Numbers/ListNumber";
+import NewTemplate from "views/Template/NewTemplate";
+import ListTemplate from "views/Template/ListTemplate";
 import Login from "views/Login";
+import Setting from "views/Setting";
 const allRoutes = [
   {
     path: "/dashboard",
@@ -49,16 +50,16 @@ const allRoutes = [
     iconOpened: <i class="fa fa-angle-down"></i>,
     subNav: [
       {
-        path: "/createUser",
+        path: "/NewNumber",
         name: "New Number",
-        component: CreateUser,
+        component: NewNumber,
         layout: "/admin",
       
       },
       {
-        path: "/ViewUsers",
+        path: "/ListNumber",
         name: "List Number",
-        component: ViewUsers,
+        component: ListNumber,
         layout: "/admin",
        
       },
@@ -71,7 +72,7 @@ const allRoutes = [
     ],
   },
   {
-    path: "/Template",
+    // path: "/Template",
     name: "Template",
     icon: "fa fa-users",
     // component: ViewCategory,
@@ -82,14 +83,14 @@ const allRoutes = [
       {
         path: "/New_Template",
         name: "New Template",
-        component: ViewCategory,
+        component: NewTemplate,
         layout: "/admin",
      
       },
       {
         path: "/List_Template",
         name: "List Template",
-        component: ViewCategory,
+        component: ListTemplate,
         layout: "/admin",
         
       },
@@ -148,6 +149,20 @@ const allRoutes = [
     
     ],
   },
+  {
+    path: "/setting",
+    name: "Setting",
+    icon: "fa fa-cog",
+    component: Setting, //Setting
+    layout: "/admin",
+  },
+  {
+    path: "/Login",
+    name: "Login",
+    icon: "fa fa-cog",
+    component: Login,
+    layout: "/admin",
+  },
   // {
   //   name: "Website Content",
   //   icon: "fas fa-globe",
@@ -192,27 +207,14 @@ const allRoutes = [
   //   ],
   
   // }, 
-  {
-    path: "/setting",
-    name: "Setting",
-    icon: "fa fa-cog",
-    component: ViewCategory,
-    layout: "/admin",
-  },
-  {
-    path: "/profile",
-    name: "Profile",
-    icon: "fa fa-cog",
-    component: UserProfile,
-    layout: "/admin",
-  },
-  {
-    path: "/Login",
-    name: "Login",
-    icon: "fa fa-cog",
-    component: Login,
-    layout: "/admin",
-  },
+  // {
+  //   path: "/setting",
+  //   name: "Setting",
+  //   icon: "fa fa-cog",
+  //   component: ViewCategory,
+  //   layout: "/admin",
+  // },
+  
 
  
 ]

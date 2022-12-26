@@ -181,7 +181,7 @@ window.env = {
   "npm_package_dependencies__ckeditor_ckeditor5_react": "^5.0.2",
   "npm_package_dependencies__fortawesome_fontawesome_free": "6.2.0",
   "npm_package_description": "![version](https://img.shields.io/badge/version-2.0.1-blue.svg) ![license](https://img.shields.io/badge/license-MIT-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/light-bootstrap-dashboard-react.svg?maxAge=2592000)]() [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/light-bootstrap-dashboard-react.svg?maxAge=2592000)]() [![Chat](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/E4aHAQy)",
-  "npm_package_gitHead": "fb47092533cd86f0f9d92fada649de8d76a3235d",
+  "npm_package_gitHead": "6d97221e449aaf2c53997a0b0ca0d0b308ac0dd2",
   "npm_package_name": "light-bootstrap-dashboard-react",
   "npm_package_optionalDependencies_jquery": "3.6.1",
   "npm_package_optionalDependencies_typescript": "4.8.2",
