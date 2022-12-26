@@ -143,10 +143,17 @@ input:checked + .slider:before {
   color: #8d8a8a;
 }
 
+.createUser_form {
+  flex: 0 0 auto;
+  width: 70.66666667%;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+  margin: auto;}
 
 
-/* //login
- */
+/* //login */
+
 h1.login_heading{
 text-align: center;
 }
@@ -157,8 +164,8 @@ text-align: center;
   box-shadow: 5px 10px #8e7bd2;
   margin-top: 36px;
  border-radius: 6px;
-  margin-top: 136px;
-  border: 2px solid #e3e3e3;
+  /* margin-top: 136px; */
+  border: 3px solid #e3e3e3;
 }
 .login_icon{
   border-radius: 150px;
@@ -176,10 +183,14 @@ button.button_facebook.btn.btn-primary {
   margin-top: 24px;
   margin-bottom: 20px;
   color: white;
-  background-color: rgb(79 19 151);
+  background-color: rgb(81, 9, 169);
   width: 60%;
 
 }
 .login_heading{
 font-family:serif
+}
+
+button.button_facebook.btn.btn-primary:hover{
+  background-color: rgb(89, 9, 180);
 }

@@ -145,6 +145,7 @@ const allRoutes = [
         layout: "/admin",
        
       },
+    
     ],
   },
   // {
@@ -206,8 +207,8 @@ const allRoutes = [
     layout: "/admin",
   },
   {
-    path: "/login",
-    name: "login",
+    path: "/Login",
+    name: "Login",
     icon: "fa fa-cog",
     component: Login,
     layout: "/admin",

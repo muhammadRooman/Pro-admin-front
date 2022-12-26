@@ -59,7 +59,7 @@ function CreateUser() {
   return (
     <Container>
       <Row>
-        <Col md="8">
+        <Col className="createUser_form" md="8">
           <Card>
             <Card.Header className="text-center">
               <Card.Title as="h4">Create User</Card.Title>
