@@ -75,7 +75,7 @@ function Header() {
               <Nav.Link
               to="/"
                 className="m-0"
-                href="#pablo"
+                href="#pablo"vi
                 onClick={(e) => e.preventDefault()}
               >
              <Link className="account" to="/admin/profile">Account</Link> 
